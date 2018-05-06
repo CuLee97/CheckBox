@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lv.dong.radiobuttoncheckbox.MainActivity"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+    // Hien thi theo chieu doc
+    // Khoang cach giua cac view la 16dp
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minh la Dong"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/tv_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"/>
+
+    // De trong Group thi khi chon 1 cai thi cai da chon se mat di
+    // Chong mot trong cac lua chon
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn_gay"
+            android:text="Gay"
+            android:checked="true"/>
+            // checked = true se khoi tao gia tri mac dinh
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn_less"
+            android:text="Less"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        // Chon nhieu su kien
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_mautim"
+            android:text="Yeu mau tim"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbmau_hong"
+            android:text="Yeu mau hong"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_noitam"
+            android:text="Song noi tam"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_khoctam"
+            android:text="Hay khoc tham"/>
+    </LinearLayout>
+
+    // Hien thi hinh anh cho button
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_button"
+        android:layout_gravity="center"/>
+</LinearLayout>
